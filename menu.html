@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ReadyFood</title>
+    <title>NoMoreHungry</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "icon" href = "images/favicon.png" type = "image/png" sizes = "16x16">
     <!-- custom css -->
@@ -27,7 +27,7 @@
     <!-- navbar -->
     <nav class = "navbar">
       <div class = "nav-brand-toggler">
-        <a href = "index.html" class = "navbar-brand">Ready <span>.</span> Food</a>
+        <a href = "index.html" class = "navbar-brand">NoMore Hungry<br><p id ="logos"> HAVE A TASTE OF PERFECTION TODAY</p></a>
         <button type = "button" class = "navbar-toggler" id = "navbar-toggler">
           <i class = "fas fa-bars"></i>
         </button>
@@ -36,56 +36,85 @@
       <div class = "navbar-collapse">
         <ul class = "navbar-nav">
           <li class = "nav-item">
-            <a href = "#home" class = "nav-link">home</a>
+            <a href = "#index.html" class = "n1">home</a>
           </li>
           <li class = "nav-item">
-            <a href = "#about" class = "nav-link">about</a>
+            <a href = "AboutUs.html" class = "n1">about</a>
           </li>
           <li class = "nav-item">
-            <a href = "#chef" class = "nav-link">chef</a>
+            <a href = "menu.html" class = "n1">menu</a>
           </li>
           <li class = "nav-item">
-            <a href = "#menu" class = "nav-link">menu</a>
-          </li>
-          <li class = "nav-item">
-            <a href = "#contact" class = "nav-link">contact</a>
+            <a href = "contact.html" class = "n1">contact</a>
           </li>
         </ul>
 
         <div class = "nav-info">
           <span class = "call-info">
             <i class = "fas fa-phone"></i>
-            0122-292-2228
+            011-224 0758
           </span>
           <button type = "button" class = "btn btn-top">
-            reserve a table
+           LOGIN
           </button>
         </div>
       </div>
     </nav>
     <!-- end of navbar -->
 
+     <!-- header -->
+    <header class = "header" id = "home">
+      <div class = "container">
+        <h2 class =|"company">no more hungry food delivery company</h2>
+        <h1 class = "header-title">Taste that best, its on time</h1>
+          <a href = "menu.html" class ="link"><button type = "button" class = "btn">See Menu & Order</button></a>
+      </div>
+    </header>
+    <!-- end of header -->
+
+<!--Top rate foods-->
+      <br><br><br>
      <!-- menu -->
     <section id = "menu" class = "menu section-py">
       <!-- title -->
       <div class = "title">
-        <h4>taste our food</h4>
-        <h2>quality food items</h2>
+        <h2>TOP RATE FOODS</h2>
       </div>
       <!-- end of title -->
 
       <div class = "menu-wrapper popup-gallery" data-aos = "fade-up">
         <!-- item -->
         <div class = "menu-item">
-          <a href = "images/food-american-breakfast.jpg">
-            <img src = "images/food-american-breakfast.jpg" alt = "food image">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\eb.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\eb.jpg" alt = "food image">
             <div class = "menu-overlay">
               <div class = "menu-overlay-content">
                 <div>
-                  <h2>american breakfast</h2>
-                  <h2>$25</h2>
+                  <h2>English Breakfast</h2>
+                  <h2>1150 LKR</h2>
                 </div>
-                <h5>delicious / healthy / cheap</h5>
+                <h4>Java Lounge</h4>
+                <h5>Fried eggs, sausages, back bacon, tomatoes, mushrooms, fried bread and slice of pudding</h5>
+                <!-- Add icon library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+                <!--Add to Cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
               </div>
             </div>
           </a>
@@ -93,15 +122,37 @@
         <!-- end of item -->
         <!-- item -->
         <div class = "menu-item">
-          <a href = "images/food-chicken-soup.jpg">
-            <img src = "images/food-chicken-soup.jpg" alt = "food image">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\soup.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\soup.jpg" alt = "food image">
             <div class = "menu-overlay">
               <div class = "menu-overlay-content">
                 <div>
-                  <h2>chicken soup</h2>
-                  <h2>$25</h2>
+                  <h2>Pumpkin Soup</h2>
+                  <h2>950 LKR</h2>
                 </div>
-                <h5>delicious / healthy / cheap</h5>
+                 <h4>Cafe Noir</h4>
+                <h5>Combining the meat of a blended pumpkin with broth or stock</h5>
+                <!-- Add icon library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+
               </div>
             </div>
           </a>
@@ -109,15 +160,76 @@
         <!-- end of item -->
         <!-- item -->
         <div class = "menu-item">
-          <a href = "images/food-chinese-noodles.jpg">
-            <img src = "images/food-chinese-noodles.jpg" alt = "food image">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\salad.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\salad.jpg" alt = "food image">
             <div class = "menu-overlay">
               <div class = "menu-overlay-content">
                 <div>
-                  <h2>chinese noodles</h2>
-                  <h2>$25</h2>
+                  <h2>Cream Cheese Salad</h2>
+                  <h2>1500 LKR</h2>
                 </div>
-                <h5>delicious / healthy / cheap</h5>
+                 <h4>Tea Avenue</h4>
+                 <h5>Lettuce, spinach, kale, mixed greens with cream cheese</h5>
+                <!-- Add icon library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end of item -->
+
+        <!-- item -->
+        <div class = "menu-item">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\macaroon.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\macaroon.jpg" alt = "food image">
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>Macaroons</h2>
+                  <h2>1110 LKR</h2>
+                </div>
+                 <h4>Ariana Treat</h4>
+                <h5>Made with egg white, icing sugar, granulated sugar, almond meal, and food coloring</h5>
+                <!-- Add icon library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+
               </div>
             </div>
           </a>
@@ -125,15 +237,37 @@
         <!-- end of item -->
         <!-- item -->
         <div class = "menu-item">
-          <a href = "images/food-cake.jpg">
-            <img src = "images/food-cake.jpg" alt = "food image">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\sushi.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\sushi.jpg" alt = "food image">
             <div class = "menu-overlay">
               <div class = "menu-overlay-content">
                 <div>
-                  <h2>cake items</h2>
-                  <h2>$25</h2>
+                  <h2>Sushi</h2>
+                  <h2>3500 LKR</h2>
                 </div>
-                <h5>delicious / healthy / cheap</h5>
+                 <h4>Sushi Kai</h4>
+                <h5> Prepared vinegared rice, usually with some sugar and salt, accompanied by a variety of ingredients</h5>
+                <!-- Add icon library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+
               </div>
             </div>
           </a>
@@ -141,31 +275,37 @@
         <!-- end of item -->
         <!-- item -->
         <div class = "menu-item">
-          <a href = "images/food-indian-food.jpg">
-            <img src = "images/food-indian-food.jpg" alt = "food image">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\cups.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\cups.jpg" alt = "food image">
             <div class = "menu-overlay">
               <div class = "menu-overlay-content">
                 <div>
-                  <h2>indian dish</h2>
-                  <h2>$25</h2>
+                  <h2>Chocolate Cupcakes</h2>
+                  <h2>230 LKR</h2>
                 </div>
-                <h5>delicious / healthy / cheap</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!-- end of item -->
-        <!-- item -->
-        <div class = "menu-item">
-          <a href = "images/food-self-made-salad.jpg">
-            <img src = "images/food-self-made-salad.jpg" alt = "food image">
-            <div class = "menu-overlay">
-              <div class = "menu-overlay-content">
-                <div>
-                  <h2>self made salad</h2>
-                  <h2>$25</h2>
-                </div>
-                <h5>delicious / healthy / cheap</h5>
+                 <h4>The Cake Factory</h4>
+                <h5>Chocolate cupcake with soft and creamy vanilla frosting</h5>
+                <!-- Add icon library -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+
               </div>
             </div>
           </a>
@@ -175,29 +315,439 @@
     </section>
     <!-- end of menu -->
 
-     <!-- footer -->
+
+<!--New arrivals-->
+        <!-- menu -->
+    <section id = "menu" class = "menu section-py">
+      <!-- title -->
+      <div class = "title">
+        <h2>NEW ARRIVALS</h2>
+      </div>
+      <!-- end of title -->
+
+          <div class = "menu-wrapper popup-gallery" data-aos = "fade-up">
+        <!-- item -->
+        <div class = "menu-item">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\oat.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\oat.jpg" alt = "food image">
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>Oat Meal</h2>
+                  <h2>850 LKR</h2>
+                </div>
+                <h4>Oaties</h4>
+                <h5>Whole oat kernels that have been cleaned and treated with heat and moisture</h5>
+
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end of item -->
+
+        <!-- item -->
+        <div class = "menu-item">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\shake.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\shake.jpg" alt = "food image">
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>Berry Shake</h2>
+                  <h2>850 LKR</h2>
+                </div>
+                <h4>Shake It</h4>
+                <h5>All natural mix berry shake with ice cream</h5>
+
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end of item -->
+
+        <!-- item -->
+        <div class = "menu-item">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\cm.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\cm.jpg" alt = "food image">
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>Chocolate Mousse</h2>
+                  <h2>650 LKR</h2>
+                </div>
+                <h4>Pudding Club</h4>
+                <h5>Sweet dish made as a smooth, light mass in which the main ingredient is whipped with cream and egg white</h5>
+
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end of item -->
+        <!-- item -->
+        <div class = "menu-item">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\f.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\f.jpg" alt = "food image">
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>Bento Cake</h2>
+                  <h2>700 LKR</h2>
+                </div>
+                <h4>The Cake Factory</h4>
+                <h5>Pretty, minimalist, two-by-four-inch cakes that weigh about 300-350 grams</h5>
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end of item -->
+        <!-- item -->
+        <div class = "menu-item">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\bub.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\bub.jpg" alt = "food image">
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>Bubble Tea</h2>
+                  <h2>520 LKR</h2>
+                </div>
+                <h4>Bubble Me Bubble Tea</h4>
+                <h5> made with tea, Sweetened milk with balls or ‘pearls’ of tapioca.</h5>
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end of item -->
+        <!-- item -->
+        <div class = "menu-item">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\kottu.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\kottu.jpg" alt = "food image">
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>Isso Kottu</h2>
+                  <h2>1300 LKR</h2>
+                </div>
+                <h4>Prawn Crazy</h4>
+                <h5>Kothu Roti, which is a scrumptious scramble of Spices, Shrimp & Veggies</h5>
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end of item -->
+      </div>
+    </section>
+    <!-- end of menu -->
+
+<!-- Special offers-->
+    <!-- menu -->
+    <section id = "menu" class = "menu section-py">
+      <!-- title -->
+      <div class = "title">
+        <h2>SPECIAL OFFERS</h2>
+      </div>
+      <!-- end of title -->
+
+          <div class = "menu-wrapper popup-gallery" data-aos = "fade-up">
+        <!-- item -->
+        <div class = "menu-item">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\coco.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\coco.jpg" alt = "food image">
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>Coconut Ice-cream</h2>
+                  <h2>400 LKR</h2>
+                </div>
+                <h4>Frosties</h4>
+                <h5>By One Get One Free</h5>
+
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end of item -->
+       
+        <div class = "menu-item">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\cb.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\cb.jpg" alt = "food image">
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>Chocolate Box</h2>
+                  <h2>2500 LKR</h2>
+                </div>
+                <h4>The Chocolate House</h4>
+                <h5>40% Off</h5>
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end of item -->
+        <!-- item -->
+        <div class = "menu-item">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\ck.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\ck.jpg" alt = "food image">
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>Blue Lagoon</h2>
+                  <h2>750 LKR</h2>
+                </div>
+                <h4>Brew Bar</h4>
+                <h5>25% Off for credit cart payments</h5>
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end of item -->
+        
+             </div>
+    </section>
+    <!-- end of menu --> 
+
+<!--People also may like-->
+
+    <!-- menu -->
+    <section id = "menu" class = "menu section-py">
+      <!-- title -->
+      <div class = "title">
+        <h2>PEOPLE ALSO MAY LIKE</h2>
+      </div>
+      <!-- end of title -->
+
+          <div class = "menu-wrapper popup-gallery" data-aos = "fade-up">
+        <!-- item -->
+        <div class = "menu-item">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\dn.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\dn.jpg" alt = "food image">
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>Donut</h2>
+                  <h2>150 LKR</h2>
+                </div>
+                <h4>OH Donut</h4>
+                <h5>Chocolate Donuts with Sripnklers</h5>
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end of item -->
+        
+        <!-- item -->
+        <div class = "menu-item">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\ec.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\ec.jpg" alt = "food image">
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>Glaze Eclair</h2>
+                  <h2>200 LKR</h2>
+                </div>
+                <h4>Queen Eclair</h4>
+                <h5>Sugar Glaze eclairs with selected toppings</h5>
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end of item -->
+        <!-- item -->
+        <div class = "menu-item">
+          <a href = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\cc.jpg">
+            <img src = "C:\Users\lakshi\Desktop\readyfood-website-master\readyfood-website-master\img\cc.jpg" alt = "food image">
+            <div class = "menu-overlay">
+              <div class = "menu-overlay-content">
+                <div>
+                  <h2>Cupcake Box</h2>
+                  <h2>800 LKR</h2>
+                </div>
+                <h4>The Cake Factory</h4>
+                <h5>Box of six chocolate and vanilla cupcakes</h5>
+                <!--Add to cart-->
+                <button 
+                type="button" 
+                class="btn btn-primary salescloud-action" 
+                data-action-triggers="click" 
+                data-action-method="jsonp" 
+                data-action-endpoint="api/public/1.0/atc" 
+                data-action-components='{"product_id": "0a0da48b-4727-47ce-b927-1806327f1719", "channel": "c264b0cb-e130-4907-86a8-eb4d6f113b7f", "quantity": {"type": "selector", "value": ".qty"}, "commit": 1}'
+                data-action-on-processed='[{"type": "prependHTML", "target": ".container-fluid", "html": "<div class=\"alert alert-success\" role=\"alert\">Product has been added to cart!</div>"}]'
+                data-loading-text="Processing...">Add to cart</button>
+                <!--End of add to cart-->
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end of item -->
+        
+       
+      </div>
+    </section>
+    <!-- end of menu -->
+
+    <br><br>
+    <a href="file:///C:/Users/lakshi/Desktop/readyfood-website-master/readyfood-website-master/checkout.html">
+     <button type = "button" class="btn btn-top">
+            CHECKOUT
+          </button>
+
+    
+    <!-- footer -->
     <footer class = "footer section-py">
       <div class = "footer-wrapper container">
         <div class = "footer-item">
           <h3>Find us</h3>
-          <p class = "para-text">Shop 4C-D, Tower 1, PL/F, China Hong Kong City, 33 Canton road, <br>Tsim Sha Tsui, Hong Kong</p>
+          <p class = "para-text">NoMoreHungry<br>No 121 kandy road, <br>Colombo</p>
         </div>
 
         <div class = "footer-item">
-          <h3>Reservation</h3>
-          <p class = "para-text">090-080-18333 | 183-222-3342</p>
-          <p class = "para-text">infor@company.com</p>
-          <p class = "para-text">LINE: readyfood383</p>
+          <h3>For Order</h3>
+          <p class = "para-text">011 224 0758 | 011 224 0760</p>
+          <p class = "para-text">info@nomorehungry.com</p>
         </div>
 
         <div class = "footer-item">
           <h3>Open Hours</h3>
-          <p class = "para-text">Monday: Closed</p>
-          <p>Tuesday to Friday</p>
+          <p class = "para-text">All days available</p>
+          <p>Monday to Friday</p>
           <p class = "para-text">7:00 AM - 9:00 PM</p>
           <p>Saturday to Sunday</p>
           <p class = "para-text">11:00 AM - 10:00 PM</p>
         </div>
+
+         <div class = "footer-item" id="infor">
+          <h3 id="heading"><br>NoMoreHungry</h3>
+            <p class = "para-text" id="descri">Have a taste of perfection today</p>
+        </div>
+      </div>
+
 
         <div class = "footer-item">
           <div class = "footer-icons">
@@ -213,10 +763,11 @@
             <a href = "https://www.linkedin.com" target = "_blank">
               <i class = "fab fa-linkedin"></i>
             </a>
-          </div>
-          <p class = "para-text">Copyright 2020 &copy; ReadyFood</p>
-          <p class = "para-text">All rights reserved.</p>
+
+          <p class = "para-text" id="rights">Copyright 2020 &copy; NoMoreHungry</p>
+          <p class = "para-text" id="reserved">  All rights reserved.</p>
         </div>
+      </div>
       </div>
     </footer>
     <!--- end of footer -->
